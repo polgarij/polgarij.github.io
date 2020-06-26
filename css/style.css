@@ -1,0 +1,58 @@
+h1, h2 {
+    font-family: 'Lobster', cursive;
+    color: red; 
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2, caption {
+    font-size: 1.1rem;
+}
+
+p, td, tr {
+    font-family: 'Roboto', sans-serif;
+}
+
+body, table {
+    background-color: yellow;
+}
+
+.content-wrapper {
+    background-color: honeydew;
+    width: 80vw;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+nav li {
+    padding: 1px;
+    margin: 0; 
+}
+nav li a {
+    color: green;
+    text-decoration: none;
+    background-color: darkgrey;
+    margin: 2px;
+    padding: 8px 30px 8px 30px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 0px #444444;
+}
+
+nav li a:hover {
+    background-color: grey;
+}
+
+ul {
+    list-style-type: none;
+}
