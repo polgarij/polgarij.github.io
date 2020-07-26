@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adminisztrációs felület</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="/js/admin.js"></script>
+
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Felhasználók admin oldal</h1>
+    </div>
+  </div>
+  <div class="user-container">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Név</th>
+          <th scope="col">E-mail</th>
+          <th scope="col">Cím</th>
+          <th scope="col">Telefonszám</th>
+          <th scope="col">Azonosító</th>
+          <th scope="col">Szerkesztés</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <input type="text" name="name" Otto>
+          </td>
+          <td>
+            <input type="email" name="email" valami@gmail.com>
+          </td>
+          <td>
+            <input type="text" name="address" 1239 Bp. Kossuth u. 3.>
+          </td>
+          <td>
+            <input type="tel" name="tel" +36701234567>
+          </td>
+          <td>
+            <input type="text" id="id" SDrtfgh45brl>
+          </td>
+          <td>
+            <div class="btn-group" role="group" aria-label="Modify">
+              <button type="button" class="btn btn-info btn-modify">Módosítás</button>
+              <button type="button" class="btn btn-danger btn-delete">Törlés</button>
+            </div>
+          </td>
+        </tr>
+
+        
+
+      </tbody>
+    </table>
+  </div>
+</body>
