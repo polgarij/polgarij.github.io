@@ -19,7 +19,8 @@
     </div>
   </div>
   <div class="user-container">
-    <table class="table table-hover">
+    <table id="userTable" class="table table-hover">
+      <h3>Felhasználók</h3>
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -33,32 +34,61 @@
       </thead>
       <tbody>
 
+        <tr class="new">
+          <caption>Új felhasználó:</caption>
+          <td>
+            <input class="form-control" type="text" name="name">
+          </td>
+          <td>
+            <input class="form-control" type="email" name="email">
+          </td>
+          <td>
+            <input class="form-control" type="text" name="address">
+          </td>
+          <td>
+            <input class="form-control" type="tel" name="tel">
+          </td>
+          <td>
+            <input class="form-control" type="text" class="id">
+          </td>
+          <td>
+            <button type="submit" class="btn btn-primary">Hozzáadás</button>     
+          </td>
+        </tr>
+
         <tr>
           <th scope="row">1</th>
           <td>
-            <input type="text" name="name" Otto>
+            <input class="form-control" type="text" name="name">
           </td>
           <td>
-            <input type="email" name="email" valami@gmail.com>
+            <input class="form-control" type="email" name="email">
           </td>
           <td>
-            <input type="text" name="address" 1239 Bp. Kossuth u. 3.>
+            <input class="form-control" type="text" name="address">
           </td>
           <td>
-            <input type="tel" name="tel" +36701234567>
+            <input class="form-control" type="tel" name="tel">
           </td>
           <td>
-            <input type="text" id="id" SDrtfgh45brl>
+            <input class="form-control" type="text" class="id">
           </td>
           <td>
             <div class="btn-group" role="group" aria-label="Modify">
-              <button type="button" class="btn btn-info btn-modify">Módosítás</button>
+              <button type="submit" class="btn btn-info btn-modify">Módosítás</button>
               <button type="button" class="btn btn-danger btn-delete">Törlés</button>
             </div>
           </td>
         </tr>
 
-        
+        <tr>
+          <td>2</td>
+          <td>Kiss</td>
+          <td>János</td>
+          <td>55</td>
+        </tr>
+
+<script src="/js/users.js"></script>
 
       </tbody>
     </table>

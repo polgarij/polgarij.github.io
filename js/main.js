@@ -24,19 +24,21 @@ function showSumPrice(price, amountNumber) {
 let helpText = document.createElement("small");
 helpText.className = "form-text text-muted";
 helpText.innerHTML = "Adja meg a feltéteket!";
-
+/*
 let parent = document.querySelector("div.form-group:nth-child(1)");
 parent.appendChild(helpText);
 
 parent.removeChild(helpText);
-
+*/
 
 let sendButton = document.querySelector("form .btn.btn-primary");
+
 /*
 sendButton.onclick = function() {
 	alert("Hello JS");
 }
-*/
+
+
 sendButton.addEventListener("click", function() {
 	alert("Hello JS");
 });
@@ -45,7 +47,7 @@ window.addEventListener("resize", function() {
 	console.log(this.innerHeight, this.innerWidth);
 });
 
-//* Űrlap események
+// Űrlap események
 
 let orderForm = document.querySelector("#orderForm");
 orderForm.addEventListener("submit", function(ev) {
@@ -57,5 +59,32 @@ orderForm.addEventListener("submit", function(ev) {
 		values[inputs[i].name] = inputs[i].value;
 	}
 
-	console-log ( values );
+	console.log ( values );
 });
+*/
+
+// Select elem kitöltése
+let toppings = [
+	"Szalonna",
+	"Hagyma",
+	"Tükörtojás",
+	"Libamáj",
+	"Extra sonka"
+];
+let toppingSelect = document.getElementById("topInput");
+let index = 0;
+while(index > toppings.length) {
+	let option = document.createElement("option");
+	option.value = index;
+	option.innerHTML = toppings[index];
+	toppingSelect.appendChild(option);
+	index++;
+}
+
+let alertCloseButtons = document.querySelectorAll(".close[data-dismiss='alert']");
+let alertCloseEventHandlerFunction = function (ev) {
+	this.parentElement.style.display = "none";
+};
+for (let i = 0; i < alertCloseButtons.length; i++) {
+	alertCloseButtons[i].addEventListener("click", alertCloseEventHandlerFunction() );
+};
